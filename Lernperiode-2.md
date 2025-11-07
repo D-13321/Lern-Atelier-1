@@ -16,3 +16,11 @@ Ich habe mit der Planung und gestalltung meines lernens angefangen.
 07.11.2025
 Ich werde selber kleine C# Projekte schreiben, um mich so gut wie möglich in Codes schreiben zu werden.
 Ich werde (falls nötig) an Sachen aus denn laufenden Modulen arbeiten.
+
+07.11.2025
+Ich habe als erstes, im Modul 162 denn letzten Auftrag gemacht denn wir am Dienstag machen mussten, denn ich auf heute verschoben habe damit ich noch für die 319 Prüfung lernen konnte.
+Ich habe 2 kleine selbsterstellte C# Programme geschrieben.
+
+14.11.2025 Planung
+Ich werde unerledigte oder verschobene Aufträge erledigen, damit ich auf dem Stand böeibe.
+Ich werde am Modul Projekt arbeiten.
