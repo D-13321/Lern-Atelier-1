@@ -24,3 +24,8 @@ Ich habe 2 kleine selbsterstellte C# Programme geschrieben.
 14.11.2025 Planung
 Ich werde unerledigte oder verschobene Aufträge erledigen, damit ich auf dem Stand böeibe.
 Ich werde am Modul Projekt arbeiten.
+
+19.12.2025 Reflektion
+Mein Plan war es mindestens noch 1 Projekt in Visual Studios neben der Schule zu machen. Ich wollte jede Woche SAchen repetieren und Sachen erledigen die ich nicht machen konnte.
+
+Ich habe ein Dank ähnliches Projekt programmiert, ich war relativ zufrieden mit dem Ergebnis und würde gerne mehr solche Projekte machen. Dazu möchte ich mehr Zeit ins programmieren stecken. Die Zeit hat mir sehr geholfen.
