@@ -29,3 +29,6 @@ Ich werde am Modul Projekt arbeiten.
 Mein Plan war es mindestens noch 1 Projekt in Visual Studios neben der Schule zu machen. Ich wollte jede Woche SAchen repetieren und Sachen erledigen die ich nicht machen konnte.
 
 Ich habe ein Dank ähnliches Projekt programmiert, ich war relativ zufrieden mit dem Ergebnis und würde gerne mehr solche Projekte machen. Dazu möchte ich mehr Zeit ins programmieren stecken. Die Zeit hat mir sehr geholfen.
+
+09.01.2026 Reflektion gesamt
+Ich habe das eine programmier Projekt das ich angefangen habe in der letzten Periode relativ Fertiggestellt. Ich bin relativ zufrieden mit dem Resultat und ich freue mich auf weitere Projekte in der neuen Periode. Ich habe jeweils die erste Hälfte am Projekt gearbeitet, der rest der Zeit habe ich dabei verbracht für die Modulle undfertige Aufträge zu erledigen oder für einen kommenden Mudelle Test zu lernen. Ich finde ich habe eine gute Ordnung und nutze meine Zeit korrekt.
