@@ -6,3 +6,6 @@ Ich habe Heute Informationen und Ideen für mein neues Projekt gesammelt. Ich ha
 
 13.03.2026 Reflexion
 Ich habe grosse Verbesserungen an meinem Projekt einer eigenen Bank gemacht. Ich hatte lange Probleme mit dem Ausführen des Programmes. Ich habe das nach langen ausprobieren und rechechiren habe ich es geschafft. Zum Projekt habe ich feste Nutzer eingefügt, wo nur diese sich in der Bank einloggen können. Dazu habe ich noch das Menü ausgebessert.
+
+27.03.2026 Lernperiode Reflexion
+Ich habe mein Projekt relativ gut abgeschlossen. Ich habe meinn eingenes Online Banking, mit nutzern und Konten alles gemacht. Das nächste Projekt wird nicht in C# geschrieben sein, sondern in eine neue wichtigere. Ich habe sehr viel neue funktionen und codes kennen gelernt. Ich habe viel mehr verstanden als am anfang vom Jahr.
