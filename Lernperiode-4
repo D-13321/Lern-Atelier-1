@@ -1,1 +1,227 @@
+09.05.2026
+Ich habe mein neues C# und letztes grosses Projekt in C# für diese jahr angefangen.
+In diesem Projekt werde ich neue Varianten nutze, Wie Klassen. Im Projekt geht es um enwickelt eines Verwaltungssystems für Mercedes.
+Ich habe erst die KLassen und den Provisorischen Code fürs Menü geschrieben:
+// See https://aka.ms/new-console-template for more information
 
+
+namespace Mercedes_Verwaltungssystem
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            MercedesVerwaltung verwaltung = new MercedesVerwaltung();
+            bool running = true;
+
+            while (running)
+            {
+                Console.WriteLine("=== Mercedes Verwaltungssystem ===");
+                Console.WriteLine("1. Auto hinzufügen");
+                Console.WriteLine("2. Alle Autos anzeigen");
+                Console.WriteLine("3. Beenden");
+                Console.Write("Auswahl: ");
+
+                string eingabe = Console.ReadLine();
+
+                switch (eingabe)
+                {
+                    case "1":
+                        MercedesAuto auto = new MercedesAuto();
+
+                        Console.Write("Modell: ");
+                        auto.Modell = Console.ReadLine();
+
+                        Console.Write("Baujahr: ");
+                        auto.Baujahr = int.Parse(Console.ReadLine());
+
+                        Console.Write("Farbe: ");
+                        auto.Farbe = Console.ReadLine();
+
+                        Console.Write("PS: ");
+                        auto.PS = int.Parse(Console.ReadLine());
+
+                        Console.Write("Kilometerstand: ");
+                        string kmInput = Console.ReadLine();
+
+                        int km;
+                        while (!int.TryParse(kmInput, out km))
+                        {
+                            Console.WriteLine("Ungültige Eingabe. Bitte eine Zahl eingeben");
+                            Console.WriteLine("Kilometerstand: ");
+                            kmInput = Console.ReadLine().Replace(".", "").Replace("'", "");
+                        }
+
+                        auto.Kilometerstand = km;
+
+                        Console.Write("Preis: ");
+                        string preisInput = Console.ReadLine();
+
+                        int preis;
+                        while (!int.TryParse(preisInput, out preis))
+                        {
+                            Console.WriteLine("Ungültige Eingabe. Bitte geben sie einen preis an!");
+                            Console.WriteLine("Preis; ");
+                            preisInput = Console.ReadLine().Replace(".", "").Replace("'", "");
+                        }
+
+                        verwaltung.AutoHinzufügen(auto);
+                        Console.WriteLine("Auto wurde hinzugefügt!");
+                        break;
+
+                    case "2":
+                        verwaltung.AlleAutosAnzeigen();
+                        break;
+
+                    case "3":
+                        running = false;
+                        break;
+
+                    default:
+                        Console.WriteLine("Ungültige Eingabe.");
+                        break;
+                }
+
+                Console.WriteLine();
+            }
+        }
+
+    }
+}
+Die KLassen:
+class MercedesAuto
+{
+    public string Modell;
+    public int Baujahr;
+    public string Farbe;
+    public int PS;
+    public int Kilometerstand;
+    public int Preis;
+
+    public void ZeigeInfo()
+    {
+    Console: Console.WriteLine(($"{Modell} ({Baujahr}) - {PS}ps, {Farbe}, {Kilometerstand}km, {Preis} CHF"));
+    }
+}
+und
+class MercedesVerwaltung
+{
+    //Liste aller Autos
+    public List<MercedesAuto> autos = new List<MercedesAuto>();
+
+    // Auto hinzufügen
+    public void AutoHinzufügen(MercedesAuto auto)
+    {
+        autos.Add(auto);
+    }
+
+    //Alle Autos anzeigen
+    public void AlleAutosAnzeigen()
+    {
+        foreach (var auto in autos)
+        {
+            auto.ZeigeInfo();
+        }
+    }
+}
+
+Insgesamt benutze ich zwei Klassen. einmal für die Verwaltung und einmal für die Autos.
+
+10.05.2026
+In diesem Vorherigen Code, bin ich noch unzufrieden, weil der Code sehr einfach einstürzen kann. In dieser Abteilung, 
+möchste ich das Programm sichern und robust machen.
+
+Ich habe damit angefangen, mit 2 Codes. Beide dieser Codes kommen im internal class, also über dem Main Code.
+Der erste Code ist das keines der Eingaben leer sein darf:
+        // Hier kommen die Methoden rein
+        static string EingabeText(string prompt)
+        {
+            Console.Write(prompt);
+            string input = Console.ReadLine();
+
+            while (string.IsNullOrWhiteSpace(input))
+            {
+                Console.WriteLine("Eingabe darf nicht leer sein.");
+                Console.Write(prompt);
+                input = Console.ReadLine();
+            }
+            return input;
+
+Der nächste Code ist für die Zahlen:
+static int EingabeZahl(string prompt, int min = 0, int max = int.MaxValue)
+{
+    Console.Write(prompt);
+    string input = Console.ReadLine();
+
+    int zahl;
+    while (!int.TryParse(input, out zahl) || zahl < min || zahl > max)
+    {
+        Console.WriteLine($"Ungültige Eingabe. Bitte eine Zahl zwischen {min} und {max} eingeben.");
+        Console.Write(prompt);
+        input = Console.ReadLine();
+    }
+
+    return zahl;
+
+Ich habe mich für diese Variante entschieden, weil wir unseren Code jetzt Übersichtlicher machen können.
+Case 1, können wir jetzt löschen und neu schreiben, Übersichtlicher und somit einfscher
+
+Von so:
+case "1":
+    MercedesAuto auto = new MercedesAuto();
+
+    Console.Write("Modell: ");
+    auto.Modell = Console.ReadLine();
+
+    Console.Write("Baujahr: ");
+    auto.Baujahr = int.Parse(Console.ReadLine());
+
+    Console.Write("Farbe: ");
+    auto.Farbe = Console.ReadLine();
+
+    Console.Write("PS: ");
+    auto.PS = int.Parse(Console.ReadLine());
+
+    Console.Write("Kilometerstand: ");
+    string kmInput = Console.ReadLine();
+
+    int km;
+    while (!int.TryParse(kmInput, out km))
+    {
+        Console.WriteLine("Ungültige Eingabe. Bitte eine Zahl eingeben");
+        Console.WriteLine("Kilometerstand: ");
+        kmInput = Console.ReadLine().Replace(".", "").Replace("'", "");
+    }
+
+    auto.Kilometerstand = km;
+
+    Console.Write("Preis: ");
+    string preisInput = Console.ReadLine();
+
+    int preis;
+    while (!int.TryParse(preisInput, out preis))
+    {
+        Console.WriteLine("Ungültige Eingabe. Bitte geben sie einen preis an!");
+        Console.WriteLine("Preis; ");
+        preisInput = Console.ReadLine().Replace(".", "").Replace("'", "");
+    }
+
+    verwaltung.AutoHinzufügen(auto);
+    Console.WriteLine("Auto wurde hinzugefügt!");
+    break;
+
+Jetzt zu so:
+case "1":
+    MercedesAuto auto = new MercedesAuto();
+
+    auto.Modell = EingabeText("Modell: ");
+    auto.Baujahr = EingabeZahl("Baujahr: ", 1886, 2100);
+    auto.Farbe = EingabeText("Farbe: ");
+    auto.PS = EingabeZahl("PS: ", 1, 2000);
+    auto.Kilometerstand = EingabeZahl("Kilometerstand: ", 0);
+    auto.Preis = EingabeZahl("Preis: ", 0);
+
+    verwaltung.AutoHinzufügen(auto);
+    Console.WriteLine("Auto wurde hinzugefügt!");
+    break;
+Im nächsten Abteil, werden wir weitere Verbesserungen und erweiterungen vornähmen.
