@@ -225,3 +225,8 @@ case "1":
     Console.WriteLine("Auto wurde hinzugefügt!");
     break;
 Im nächsten Abteil, werden wir weitere Verbesserungen und erweiterungen vornähmen.
+
+22.05.2026
+Heute wurde das Programm nochmals von Fehlern durchsucht. Weitere Idee, wie man dieses Verwaltungssystem verbessern kann wurden gesammelt. 
+
+Das nächste mal werden wir damit anfangen diese Ideen zu realisieren.
