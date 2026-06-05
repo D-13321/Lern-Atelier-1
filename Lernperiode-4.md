@@ -237,3 +237,48 @@ Ich will bis ende Schuljahr noch mein Mercedesverwaltungssystem fertig stellen.
 Erstellen der Webseiten-Vorlage wurde endlich fertig gestellt.
 
 Nächste Woche wird wieder mehr Informationen kommen.
+
+# Lern-Periode 4
+
+- Name: David Gjorgejv
+- Zeitraum: 24.04.2026 bis 26.06.2026
+
+## Grob-Planung
+
+### Noten
+Ich stehe momentan bei einer 5 in der Informatik. Ich bin zufrieden aber nicht begeistert. Eine 5 ist die mindest Anforderung kann man sagen. Mir sind Modul Noren wichtig, die spezialisiert auf meine Orientirung gemacht ist. Natürlich verscuhe ich ich vorallem in Informatik bei jedem Modul die maximale Note zu bekommen und zu lernen. Ich möchte bis ende der 3 Jahren ein Schnitt von 5.5 schaffen.
+
+### Veränderungen
+Megr Fokus auf eigene Projekte, bei dennen ich das programmieren gut selbständig lernen kann. Projekte die gut für Praktikums sind.
+
+### Projekte / neue Technologien
+Projekte in einer anderen Sprache. Berufs wichtige Projekte.
+
+### Generelle Ziele
+Sicherer in programmieren werden.
+
+## Tagesplanungen
+
+### Planung 05.06.2026
+3 bis 5 klar messbare Arbeitspakete.
+
+- [x] Projektidee sammeln
+- [x] Projekt anfangen
+- [X] Projektdoku anfangen
+
+Heute habe ich Projektideen für mein Powershell Projekt gesammelt. Ich bin auf die Idee gekommen ein, beim einschalten des
+Computers, eine Motivations Benachrichtigung.
+Ich habe mit dem Skript angefangen und dazu noch die Doku.
+
+
+### Planung 23.08.2024
+3 bis 5 klar messbare Arbeitspakete.
+
+- [ ] Erstes Arbeitspaket
+- [ ] ...
+- [X] Viertes AP
+
+(Heute habe ich... (50-100 Wörter))
+
+## Lernperiode Reflexion
+(In dieser Lernperiode habe ich... (100-150 Wörter))
