@@ -271,8 +271,8 @@ Computers, eine Motivations Benachrichtigung.
 Ich habe mit dem Skript angefangen und dazu noch die Doku.
 
 
-### Planung 23.08.2024
-3 bis 5 klar messbare Arbeitspakete.
+### Planung 12.06.2026
+Abwesend
 
 - [ ] Erstes Arbeitspaket
 - [ ] ...
@@ -281,4 +281,27 @@ Ich habe mit dem Skript angefangen und dazu noch die Doku.
 (Heute habe ich... (50-100 Wörter))
 
 ## Lernperiode Reflexion
-(In dieser Lernperiode habe ich... (100-150 Wörter))
+Abwesend
+
+## Tagesplanungen
+
+### Planung 19.06.2026
+Ich will heute den grässten Teil meines C# Projektes Fertigschreiben. Ich will die neuen Aspekte umsätzen und testen
+
+- [x] Fast Fertig mit dem Jetzigen Code
+- [x] Umsätzen vom lätzen mal
+- [X] Neue Codes testen
+
+Heute habe ich die meiste Zeit genutzt, um mein jetztiger Code mit denn vorhandenen Idee zum grössten Teil fertig zu stellen. Danach habe ich mit kleinen extra Code die das Projekt verbessernt, angefagen, die Ideen habe ich letztes mal Aufgeschrieben. Als letztes ahbe ich das ganze getestet.
+
+
+### Planung 26.06.2026
+Projekt fertigstellen.
+
+- [ ] Erstes Arbeitspaket
+- [ ] ...
+- [X] Viertes AP
+
+(Heute habe ich... (50-100 Wörter))
+
+## Lernperiode Reflexion
